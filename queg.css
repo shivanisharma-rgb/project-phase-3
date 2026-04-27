@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background: linear-gradient(135deg, #a9b4e6, #764ba2);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Card */
+.container {
+    background: white;
+    width: 400px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+/* Title */
+h1 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Question */
+#question {
+    margin: 20px 0;
+    font-size: 18px;
+    color: #444;
+}
+
+/* Buttons */
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 8px;
+    background: #667eea;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #8e95d4;
+    transform: scale(1.03);
+}
+
+/* Correct / Wrong */
+.correct {
+    background-color: #28a745 !important;
+}
+
+.wrong {
+    background-color: #dc3545 !important;
+}
+
+/* Next Button */
+#nextBtn {
+    background: #ff9800;
+}
+
+#nextBtn:hover {
+    background: #e68900;
+}
+
+/* Score */
+#score {
+    margin-top: 20px;
+    font-size: 22px;
+    color: #222;
+}
+
+/* Hidden */
+.hide {
+    display: none;
+}

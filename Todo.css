@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e045f);
+    padding: 20px;
+}
+
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    background-color: #fff;
+    margin: 100px auto;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.todo-app h2{
+    color:#002765;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-app h2 img{
+    width: 40px;
+    margin-left: 10px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.input{
+    flex:1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.button{
+    border: none;
+    outline: none;
+    padding: 14px 25px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px; 
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+/* LIST */
+ul{
+    padding-left: 40px;
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px;
+    margin-top: 10px;
+    background: #f2f2f2;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+/* CIRCLE */
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: gray;
+    left: -30px;
+    top: 12px;
+}
+
+/* DELETE BUTTON */
+ul li span{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height:40px;
+    text-align: center;
+
+}
